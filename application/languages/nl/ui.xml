@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="nl" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="">
+                <source>Login</source>
+                <target>Aanmelden</target>
+            </trans-unit>
+            <trans-unit id="">
+                <source>Logout</source>
+                <target>Afmelden</target>
+            </trans-unit>
+            <trans-unit id="">
+                <source>Register</source>
+                <target>Registreren</target>
+            </trans-unit>
+            <trans-unit id="">
+                <source>Username</source>
+                <target>Gebruikersnaam</target>
+            </trans-unit>
+            <trans-unit id="">
+                <source>Password</source>
+                <target>Wachtwoord</target>
+            </trans-unit>
+            <trans-unit id="">
+                <source>Edit Profile</source>
+                <target>Wijzig Persoonlijke Instellingen</target>
+            </trans-unit>
+            <trans-unit id="">
+                <source>Profile</source>
+                <target>Profiel</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

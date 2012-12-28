@@ -1,0 +1,19 @@
+<?php echo $this->doctype() . "\n"; ?>
+<html lang="nl">
+<head>
+<?php
+echo  $this->headMeta()   . "\n"
+    . $this->headTitle()  . "\n"
+    . $this->headLink()   . "\n"
+    . $this->headScript() . "\n";
+?>
+</head>
+<body data-base-url="<?php echo $this->baseUrl(); ?>">
+    <div class="container">
+<?php
+echo  $this->layout()->content . "\n"
+    . $this->inlineScript()    . "\n";
+?>
+    </div>
+</body>
+</html>

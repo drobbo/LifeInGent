@@ -1,0 +1,28 @@
+home:
+  label: Home
+  module: default
+  controller: index
+  action: index
+  pages:
+    BackofficeModule:
+      label: Backoffice
+      module: backoffice
+      controller: index
+      action: index
+      pages:
+          loginAction:
+            label: Login
+            module: backoffice
+            controller: index
+            action: login
+          logoutAction:
+            label: Logout
+            module: backoffice
+            controller: index
+            action: logout
+          editAction:
+            label: Edit Profile
+            module: backoffice
+            controller: index
+            action: edit
+              

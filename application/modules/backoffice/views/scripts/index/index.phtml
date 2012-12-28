@@ -1,0 +1,16 @@
+<? echo $this->render("partials/menu.phtml") ?>
+
+<div class="container-fluid">
+    <a class="btn btn-large btn-block btn-primary" href="<?php echo $this->baseUrl('backoffice/index/updateall') ?>">update all info</a>
+    <div id="hero-unit">
+        <div>
+            <?php for($i=0; $i<count($this->data); $i++): ?>
+                <dl>
+                    <dt><?php echo($this->data[$i]["hospital_name"]); ?></dt>
+                    <dd><strong>adress:</strong><?php echo($this->data[$i]["hospital_address"]); ?></dd>
+                    <dd><strong>coords:</strong><?php echo($this->data[$i]["hospital_lat"]." ".$this->data[$i]["hospital_long"]); ?></dd>
+                </dl>
+            <?php endfor; ?>
+        </div>
+    </div>
+</div>

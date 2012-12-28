@@ -1,0 +1,26 @@
+<?php $translate = Zend_Registry::get('Zend_Translate'); ?>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="<?php echo $this->baseUrl('/') ?>">LifeInGent</a>
+            <ul class="nav">
+                <li class="active"><a href="<?php echo $this->baseUrl('backoffice') ?>"><i class="icon-home"></i> Home</a></li>
+                <?php if($this->loggedIn == false): ?> 
+                    <li><a href="<?php echo $this->baseUrl('backoffice/index/login') ?>"><?php echo $translate->_('Login'); ?></a></li>
+                <?php else: ?>
+                    <li><a href="<?php echo $this->baseUrl('backoffice/index/edit') ?>"><?php echo $translate->_('Profile'); ?></a></li>
+                    <li><a href="<?php echo $this->baseUrl('backoffice/index/logout') ?>"><?php echo $translate->_('Logout'); ?></a></li>
+                <?php endif; ?>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h1><?php echo $this->title; ?></h1>
+
+<?php
+    
+    echo $this->navigation()->breadcrumbs();
+
+?>
+
